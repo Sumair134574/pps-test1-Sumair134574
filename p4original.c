@@ -1,18 +1,18 @@
 #include<stdio.h>
-int compare(int a,int b,int c)
+int cmp(int a,int b,int c)
 {
   int l;
-  if(a>b && a>c)
+  if((a>b) && (a>c))
   printf("A is big\n");
-  else if(b>a && b>c)
+  else if((b>a) && (b>c))
   printf("B is big\n");
-  else if(c>a && c>b)
+  else if((c>a) && (c>b))
   printf("C is big\n");
 }
 int input()
 {
   int a;
-  printf("enter the number\n");
+  printf("enter three number\n");
   scanf("%d" , &a);
   return a;
 }
@@ -26,7 +26,7 @@ int main()
   a=input();
   b=input();
   c=input();
-  l=compare(a,b,c);
+  l=cmp(a,b,c);
   output(l);
   return 0;
 }
